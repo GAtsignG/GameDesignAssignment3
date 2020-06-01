@@ -9,6 +9,10 @@ public class AIMovement : MonoBehaviour
     public float speed = 0.05f;
     int moveToIndex = 0;
     int randIndex;
+<<<<<<< Updated upstream
+=======
+    bool finished;
+>>>>>>> Stashed changes
 
     private void eMove(int index)
     {
@@ -25,11 +29,21 @@ public class AIMovement : MonoBehaviour
     void Start()
     {
         randIndex = Random.Range(0, waypoints.Length);
+<<<<<<< Updated upstream
     }
     void Update()
     {
         if (moveToIndex < waypoints.Length)
         {
+=======
+        finished = false;
+    }
+    void Update()
+    {
+
+            if (moveToIndex < waypoints.Length)
+           {
+>>>>>>> Stashed changes
             if (gameObject.name == "Mr.GreenMovement_0" &&
                 gameObject.transform.position == waypoints[randIndex].transform.position)
             {
@@ -41,12 +55,22 @@ public class AIMovement : MonoBehaviour
             }
             else
             eMove(moveToIndex);          
+<<<<<<< Updated upstream
         }
 
         if (moveToIndex == waypoints.Length)
         {
             moveToIndex = 0; //loop
         }
+=======
+           }
+
+           if (moveToIndex == waypoints.Length)
+           {
+            moveToIndex = 0; //loop
+           }
+        
+>>>>>>> Stashed changes
     }
 
     
