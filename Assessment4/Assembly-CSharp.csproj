@@ -38,10 +38,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AIMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-<<<<<<< Updated upstream
-     <Compile Include="Assets\Scripts\Pause.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-=======
      <Compile Include="Assets\Scripts\MoveAndJump.cs" />
      <Compile Include="Assets\Scripts\MoveAndPush.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
@@ -50,7 +46,6 @@
      <Compile Include="Assets\Scripts\PorjectileStop.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\ProjectileDestoryed.cs" />
->>>>>>> Stashed changes
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
