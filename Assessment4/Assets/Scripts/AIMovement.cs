@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AIMovement : MonoBehaviour
 {
@@ -54,13 +55,15 @@ public class AIMovement : MonoBehaviour
     }
 
     
-    // void OnTriggerEnter2D(Collider2D c)
-    // {
-    //     if (c.name == "MalePlayer")
-    //     {
-    //         Destroy(c.gameObject);
-    //         SceneManager.LoadSceneAsync(2);
-    //     }
+       void OnTriggerEnter2D(Collider2D c)
+    {
+        if (c.name == "MalePlayer")
+        {
+            //Destroy(c.gameObject);
+            //Instantiate(explosion,transform.position,transform.rotation);
+            //Destroy(gameObject);
+            SceneManager.LoadSceneAsync(2);
+        }
 
-    // }
+    }
 }

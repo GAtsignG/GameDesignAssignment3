@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Projectile : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class Projectile : MonoBehaviour
         
         timer = (int)Time.time;
         //every 2 second
-        if ((timer - tempTimer == 2)){
+        if ((timer - tempTimer == 1)){
           //Debug.Log("fire block!");
           tempTimer = timer;        
           newP = new Vector3((playerPosition.position.x + 10f), Random.Range(-7f, 7f)
@@ -58,9 +59,9 @@ public class Projectile : MonoBehaviour
         if (c.name == "MalePlayer")
         {
             //Destroy(c.gameObject);
-            Instantiate(explosion,transform.position,transform.rotation);
-            Destroy(gameObject);
-            //SceneManager.LoadSceneAsync(2);
+            //Instantiate(explosion,transform.position,transform.rotation);
+            //Destroy(gameObject);
+            SceneManager.LoadSceneAsync(2);
         }
 
     }
