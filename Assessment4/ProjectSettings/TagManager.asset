@@ -8,6 +8,7 @@ TagManager:
   - collideEffect
   - box
   - Ground
+  - fireTrap
   layers:
   - Default
   - TransparentFX

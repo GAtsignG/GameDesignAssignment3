@@ -34,6 +34,7 @@ public class AIMovement : MonoBehaviour
 
             if (moveToIndex < waypoints.Length)
            {
+
             if (gameObject.name == "Mr.GreenMovement_0" &&
                 gameObject.transform.position == waypoints[randIndex].transform.position)
             {
@@ -43,8 +44,15 @@ public class AIMovement : MonoBehaviour
             {    
                 eMove(randIndex); //random move
             }
+
+            if (gameObject.transform.position == waypoints[randIndex].transform.position)
+            {
+                randIndex = Random.Range(0, waypoints.Length);
+            }
             else
-            eMove(moveToIndex);          
+            
+            eMove(randIndex); //random move
+            //eMove(moveToIndex);          
            }
 
            if (moveToIndex == waypoints.Length)
@@ -62,7 +70,7 @@ public class AIMovement : MonoBehaviour
             //Destroy(c.gameObject);
             //Instantiate(explosion,transform.position,transform.rotation);
             //Destroy(gameObject);
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadSceneAsync(3);
         }
 
     }

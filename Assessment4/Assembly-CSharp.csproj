@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\PorjectileStop.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\ProjectileDestoryed.cs" />
+     <Compile Include="Assets\Scripts\TrapTrigger.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
