@@ -49,6 +49,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Vehiicle
+  - name: Decoration
+    uniqueID: 3900165223
+    locked: 0
+  - name: Interactable items
+    uniqueID: 4289628545
+    locked: 0
+  - name: Character
+    uniqueID: 764541593
+    locked: 0
+  - name: Brick-Front
     uniqueID: 2694649609
+    locked: 0
+  - name: Cover
+    uniqueID: 3534800485
     locked: 0
