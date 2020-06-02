@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 921, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 98
+  controlID: 145
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 645, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 136
+  controlID: 146
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_MinSize: {x: 645, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 137
+  controlID: 147
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,7 +330,7 @@ MonoBehaviour:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 5378984669337821027, guid: cf33e7ef99ee50e409fd71acd26b1f30,
+  m_Palette: {fileID: 6241230881806455114, guid: 9cb429409b89db04aa662d24b2ab7d7a,
     type: 3}
 --- !u!114 &14
 MonoBehaviour:
@@ -408,8 +408,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -497.5
     m_HBaseRangeMax: 497.5
-    m_VBaseRangeMin: -450.5
-    m_VBaseRangeMax: 450.5
+    m_VBaseRangeMin: -461
+    m_VBaseRangeMax: 461
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -426,11 +426,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 995
-      height: 901
+      height: 922
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 497.5, y: 450.5}
+    m_Translation: {x: 497.5, y: 461}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -438,9 +438,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -497.5
-      y: -450.5
+      y: -461
       width: 995
-      height: 901
+      height: 922
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 995, y: 922}
@@ -480,7 +480,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c28bffff3c8cffff6a8cffff888cffff7a8fffff8891ffffca9cffffac9dffffe09fffffb0a6ffff7ebafffff6c0ffff04c1ffffbcc1ffff92c2ffff9ac2ffffa2c2ffffaac2ffff3cc3ffff74c3ffffcac3ffffb6c7ffff245b0000325b0000
+      m_ExpandedIDs: 72faffff6afbffff963f0000a43f0000ba3f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -540,9 +540,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.2878666, y: -1.8220766, z: -0.77246094}
+    m_Target: {x: 10.355239, y: 1.6007926, z: -26.134766}
     speed: 2
-    m_Value: {x: -1.2878666, y: -1.8220766, z: -0.77246094}
+    m_Value: {x: 10.355239, y: 1.6007926, z: -26.134766}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -592,9 +592,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.938875
+    m_Target: 10.372295
     speed: 2
-    m_Value: 7.938875
+    m_Value: 10.861042
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -684,34 +684,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Visual Assets/Mine/4 Animated objects
+    - Assets/Tiles
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Visual Assets/Mine/4 Animated objects
+  - Assets/Tiles/LV1_ITEM
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Users\Doctuments\GitHub\GameDesignAssignment4\Assessment4
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 289}
-    m_SelectedIDs: 92430000
-    m_LastClickedID: 17298
-    m_ExpandedIDs: 000000001a4300001c4300001e43000020430000224300003e4300004043000042430000744300007843000000ca9a3b
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: 96390000
+    m_LastClickedID: 14742
+    m_ExpandedIDs: 000000006a3900006c3900006e39000070390000723900007439000076390000783900007a3900007c39000096390000a639000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 3 Objects
-      m_OriginalName: 3 Objects
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 17186
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -725,7 +725,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a4300001c4300001e430000204300002243000024430000
+    m_ExpandedIDs: 000000006a3900006c3900006e39000070390000723900007439000076390000783900007a3900007c390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
