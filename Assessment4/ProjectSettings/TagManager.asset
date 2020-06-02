@@ -9,6 +9,7 @@ TagManager:
   - box
   - Ground
   - fireTrap
+  - door
   layers:
   - Default
   - TransparentFX

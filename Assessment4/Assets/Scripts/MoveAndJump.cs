@@ -12,7 +12,7 @@ Rigidbody2D rb;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
 
-    bool isGrounded = true;
+    private bool isGrounded = true;
     public Transform isGroundedChecker;
     public float checkGroundRadius;
     public LayerMask groundLayer;
@@ -41,8 +41,13 @@ Rigidbody2D rb;
         if (gameObject.tag == "Player")
         {
           Move();
+          Debug.Log(isGrounded);
+          if (isGrounded)
+          {
           Jump();
           BetterJump();
+          }
+          
         }
         
         CheckIfGrounded();
@@ -57,10 +62,16 @@ Rigidbody2D rb;
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
     }
 
+    // void Jump() {
+    //     if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 0)) {
+    //         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+    //         additionalJumps--;
+    //     }
+    // }
     void Jump() {
-        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 0)) {
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded )) {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            additionalJumps--;
+            
         }
     }
 
@@ -78,18 +89,18 @@ Rigidbody2D rb;
         {
           Collider2D colliders = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
         
-        
-
+    
         if (colliders != null) {
             isGrounded = true;
-            Debug.Log("isGrounded");
-            additionalJumps = defaultAdditionalJumps;
-        } else {
+            Debug.Log("isGrounded  " + colliders.name);
+            //additionalJumps = defaultAdditionalJumps;
+        } 
+        else {
+            Debug.Log("On air");
             if (isGrounded) {
                 lastTimeGrounded = Time.time;
             }
-            isGrounded = false;
-            Debug.Log("noGrounded");
+            isGrounded = false;          
         }
         
         }
