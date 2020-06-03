@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\PorjectileStop.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\ProjectileDestoryed.cs" />
+     <Compile Include="Assets\Scripts\StandToTrigger.cs" />
      <Compile Include="Assets\Scripts\Trap.cs" />
      <Compile Include="Assets\Scripts\TrapToDoor.cs" />
      <Compile Include="Assets\Scripts\TrapTrigger.cs" />
@@ -654,6 +655,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:/UTS/Master/2020/Computer Game Design/A3git/GameDesignAssignment4/Assessment4/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>D:/UTS/Master/2020/Computer Game Design/A3git/GameDesignAssignment4/Assessment4/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>D:/UTS/Master/2020/Computer Game Design/A3git/GameDesignAssignment4/Assessment4/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

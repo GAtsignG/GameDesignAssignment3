@@ -21,11 +21,13 @@ public class TrapTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D c)
     {
-        if (c.name == "box")
+        if (c.CompareTag("box"))
         {
             //m_Animator.GetComponent<Animator>().enabled = false;
             //m_Animator.GetComponent<Animator>().enabled = true;
+            Debug.Log("Block");
             m_Animation.Rewind();
+            m_Animation.Stop();
             m_Animator.enabled = false;
             Destroy(gameObject);     
         }
@@ -33,7 +35,7 @@ public class TrapTrigger : MonoBehaviour
         if (c.name == "MalePlayer")
         {
 
-            SceneManager.LoadSceneAsync(3);
+            SceneManager.LoadSceneAsync(4);
         }
 
     
