@@ -26,7 +26,7 @@ public class EnterNextLevel : MonoBehaviour
     {
         if (c.CompareTag("Player") && openDoor)
         {
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
