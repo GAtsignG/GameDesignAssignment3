@@ -61,7 +61,7 @@ public class Projectile : MonoBehaviour
             //Destroy(c.gameObject);
             //Instantiate(explosion,transform.position,transform.rotation);
             //Destroy(gameObject);
-            SceneManager.LoadSceneAsync(4);
+            SceneManager.LoadScene(5);
         }
 
     }

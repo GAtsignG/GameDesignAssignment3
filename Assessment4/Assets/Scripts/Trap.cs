@@ -21,8 +21,8 @@ public class Trap : MonoBehaviour
 
         if (c.name == "MalePlayer")
         {
-
-            SceneManager.LoadSceneAsync(4);
+            MsgReceiver.currentLevel = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadSceneAsync(5);
         }
 
     

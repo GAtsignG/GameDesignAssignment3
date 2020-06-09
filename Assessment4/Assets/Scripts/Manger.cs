@@ -15,16 +15,21 @@ public class Manger : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;   
         //display current scene info 
-        Debug.Log(MsgReceiver.passInfo);   
+        //Debug.Log(MsgReceiver.passInfo);   
     }
     public void LoadFirstLevel()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         StartCoroutine(ChangeScene());
         //SceneManager.LoadSceneAsync(1);
         //to level 1
     }
-
+    
+    public void respawn()
+    {
+        int level = MsgReceiver.currentLevel;
+        SceneManager.LoadSceneAsync(level);
+    }
     private IEnumerator ChangeScene()
     {
         float waitTime = 1.0f;

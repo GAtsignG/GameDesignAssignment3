@@ -4,5 +4,19 @@ using UnityEngine;
 
 public static class MsgReceiver
 {
-  public static string passInfo { get; set; }
+  private static int level;
+  public static int currentLevel 
+  {
+     get
+     {
+        return level;
+     } 
+     
+     set
+     {
+       level = value;
+     }
+     
+  }
+
 }

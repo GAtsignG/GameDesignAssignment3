@@ -35,7 +35,7 @@ public class TrapTrigger : MonoBehaviour
         if (c.name == "MalePlayer")
         {
 
-            SceneManager.LoadSceneAsync(4);
+            SceneManager.LoadSceneAsync(5);
         }
 
     

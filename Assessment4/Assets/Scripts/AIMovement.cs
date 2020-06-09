@@ -70,7 +70,8 @@ public class AIMovement : MonoBehaviour
             //Destroy(c.gameObject);
             //Instantiate(explosion,transform.position,transform.rotation);
             //Destroy(gameObject);
-            SceneManager.LoadSceneAsync(3);
+            MsgReceiver.currentLevel = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadSceneAsync(5);
         }
 
     }

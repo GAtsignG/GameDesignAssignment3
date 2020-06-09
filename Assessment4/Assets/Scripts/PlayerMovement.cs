@@ -41,22 +41,22 @@ bool validMove(Vector2 dir)
         Vector2 pos = transform.position;           
         RaycastHit2D hit = Physics2D.Linecast(pos + dir, pos);
         
-        if (hit.collider != null && hit.collider != cor2D)
-        {
-            AudioSource s = GameObject.FindGameObjectWithTag("collideEffect").GetComponent<AudioSource>();
-            s.PlayOneShot(s.clip);
+        // if (hit.collider != null && hit.collider != cor2D)
+        // {
+        //     //AudioSource s = GameObject.FindGameObjectWithTag("collideEffect").GetComponent<AudioSource>();
+        //     //s.PlayOneShot(s.clip);
             
-            Debug.Log(hit.collider);
-           /* if (hit.collider == GameObject.FindGameObjectWithTag("Coin").GetComponent<BoxCollider2D>())
-            {
-                Debug.Log("Destory");
-                Destroy(hit.collider.gameObject);
-                return true;
-            }*/
-            return false;
+        //     Debug.Log(hit.collider);
+        //    /* if (hit.collider == GameObject.FindGameObjectWithTag("Coin").GetComponent<BoxCollider2D>())
+        //     {
+        //         Debug.Log("Destory");
+        //         Destroy(hit.collider.gameObject);
+        //         return true;
+        //     }*/
+        //     return false;
             
-        }
-        else        
+        // }
+        // else        
         return true;
     }
 
